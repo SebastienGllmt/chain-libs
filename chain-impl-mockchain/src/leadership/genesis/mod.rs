@@ -539,7 +539,8 @@ mod tests {
             .is_err());
     }
 
-    use crate::block::{BlockBuilder, Contents};
+    use crate::block::{Block, BlockBuilder, Contents, Header};
+    use crate::testing::data::StakePool;
     use chain_core::property::ChainLength;
 
     #[test]
